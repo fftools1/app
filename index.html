@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FF Tools</title>
+
+    <!-- ✅ SEO Tags Start -->
+    <meta name="description" content="FF Tools – Advanced Mobile Performance Optimizer">
+    <meta name="keywords" content="FF Tools, Free Fire Tools, Gaming Tools, Headshot Tools">
+    <meta name="author" content="Alone boy">
+
+    <!-- Open Graph for Facebook -->
+    <meta property="og:title" content="FF Tools – Advanced Mobile Performance Optimizer" />
+    <meta property="og:description"
+        content="FF Tools is a powerful mobile performance optimization application designed to improve device responsiveness, manage background processes, and enhance gaming stability." />
+    <meta property="og:image"
+        content="https://image.winudf.com/v2/image1/Y29tLmZmdG9vbGZyZWUuZmZ0b29sc19wcm14c19pY29uXzE2NzQ3OTA2OTZfMDcy/icon.png?w=160&fakeurl=1" />
+    <meta property="og:url" content="https://cctvonline1.github.io/app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FF Tools – Advanced Mobile Performance Optimizer" />
+    <meta name="twitter:description"
+        content="FF Tools is a powerful mobile performance optimization application designed to improve device responsiveness, manage background processes, and enhance gaming stability." />
+    <meta name="twitter:image"
+        content="https://image.winudf.com/v2/image1/Y29tLmZmdG9vbGZyZWUuZmZ0b29sc19wcm14c19pY29uXzE2NzQ3OTA2OTZfMDcy/icon.png?w=160&fakeurl=1" />
+    <!-- ✅ SEO Tags End -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            margin-right: 15px;
+        }
+
+        .app-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .app-company {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .install-button {
+            background-color: #1e88e5;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .install-button:hover {
+            background-color: #1565c0;
+        }
+
+        .section-title {
+            font-size: 18px;
+            margin: 20px 0 10px;
+        }
+
+        .about-text {
+            background-color: #1f1f1f;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 60px;
+            position: relative;
+        }
+
+        .fade {
+            position: absolute;
+            bottom: 10px;
+            /* নিচে একটু নেমেছে */
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(transparent, #1f1f1f);
+            pointer-events: none;
+            /* ক্লিক ব্লক করতেছে, তাই এইটা দিলাম */
+        }
+
+        .read-more {
+            color: #1e88e5;
+            cursor: pointer;
+            margin-top: 10px;
+            /* আগের থেকে একটু নিচে নেমেছে */
+            display: inline-block;
+        }
+
+        /* Screenshot section updated */
+        .screenshots {
+            white-space: nowrap;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .screenshots img {
+            height: 200px;
+            margin-right: 20px;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .screenshots img:last-child {
+            margin-right: 0;
+        }
+
+        /* Modal for image popup */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            display: block;
+            margin: 5% auto;
+            border-radius: 10px;
+        }
+
+        .rating-section {
+            margin-top: 20px;
+        }
+
+        .average-rating {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .star-display {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .review {
+            background-color: #1f1f1f;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .review-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .see-more {
+            text-align: center;
+            color: #1e88e5;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        .see-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app-header">
+            <img src="https://image.winudf.com/v2/image1/Y29tLmZmdG9vbGZyZWUuZmZ0b29sc19wcm14c19pY29uXzE2NzQ3OTA2OTZfMDcy/icon.png?w=160&fakeurl=1"
+                alt="App Icon" class="app-icon" />
+            <div>
+                <div class="app-title">FF Tools</div>
+                <div class="app-company">Developed by Alone boy</div>
+            </div>
+        </div>
+
+        <div class="meta-info">
+            <div>1M+ downloads</div>
+            <div>10 MB</div>
+        </div>
+
+        <a href="https://github.com/cctvonline1/app/raw/refs/heads/main/CCTVOnline.apk" download>
+            <button class="install-button">Download APK</button>
+        </a>
+
+        <div class="section-title">Screenshots</div>
+        <div class="screenshots">
+            <img src="https://res.cloudinary.com/daseyqhav/image/upload/v1772263352/1-portrait_uorypu.png"
+                alt="Screenshot 1" onclick="openModal(this.src)" />
+            <img src="https://res.cloudinary.com/daseyqhav/image/upload/v1772263352/4-portrait_yxlpdi.png"
+                alt="Screenshot 2" onclick="openModal(this.src)" />
+            <img src="https://res.cloudinary.com/daseyqhav/image/upload/v1772263351/2-portrait_i8uev4.png"
+                alt="Screenshot 3" onclick="openModal(this.src)" />
+            <img src="https://res.cloudinary.com/daseyqhav/image/upload/v1772263351/3-portrait_sblyj9.png"
+                alt="Screenshot 4" onclick="openModal(this.src)" />
+        </div>
+
+        <div class="section-title">About this app</div>
+        <div class="about-text" id="aboutText">
+            <div id="aboutShort">
+                <p><b>FF Tools</b> Advanced Mobile Performance Optimizer </p>
+                <p>FF Tools is a powerful mobile performance optimization application designed to improve device
+                    responsiveness, manage background processes, and enhance gaming stability.</p>
+            </div>
+            <div id="aboutFull" style="display: none">
+                <p><b>FF Tools</b> Advanced Mobile Performance Optimizer </p>
+                <p>FF Tools is a powerful mobile performance optimization application designed to improve device
+                    responsiveness, manage background processes, and enhance gaming stability.</p>
+
+                <p>Built with advanced system-level performance techniques, FF Tools helps users achieve smoother
+                    gameplay and better overall device efficiency.</p>
+                <ul>
+                    <li>
+                        <b>⚙ Core Optimization Systems</b>
+                        <p>
+                            <b>🔍 Smart Device Scanning</b><br>
+
+                            Analyzes hardware status, background activity, and system resource usage to identify
+                            performance bottlenecks.<br>
+
+                            <b>🧹 Intelligent Cleaning Engine</b><br>
+
+                            Removes unnecessary temporary files and clears cache to free up storage and improve speed.<br>
+
+                            <b>🧠 RAM Optimization</b><br>
+
+                            Manages background processes and intelligently reallocates memory for better multitasking
+                            and gaming performance.<br>
+
+                            <b>🎮 Gaming Mode Activation</b><br>
+
+                            Reduces background interruptions and prioritizes gaming resources for smoother frame
+                            stability.<br>
+
+                            <b>📈 FPS Stabilization</b><br>
+
+                            Optimizes system load distribution to maintain more consistent frame performance during
+                            gameplay.<br>
+
+                            <b>🛠 Lag Reduction System</b><br>
+
+                            Minimizes performance spikes and stabilizes device response under heavy load.<br>
+
+                            <b>🌐 Network Optimization</b><br>
+
+                            Improves connection routing and reduces latency fluctuations for more stable online
+                            gameplay.<br>
+
+                            <b>🎯 Advanced Sensitivity Adjustment</b><br>
+
+                            Fine-tunes touch responsiveness and input processing for improved control precision.<br>
+
+                            <b>⚙ Advanced Performance Settings (Auto Apply)</b><br>
+
+                            Automatically applies device-specific optimization configurations tailored to hardware
+                            capability.<br>
+
+                            <b>🚀 Auto Boosting Engine</b><br>
+
+                            Runs a complete performance optimization cycle to enhance speed, stability, and
+                            responsiveness.<br>
+
+                            <b>🎮 Designed for Competitive Mobile Gamers</b><br>
+
+                            FF Tools is built for users who demand smoother gameplay, stable performance, and enhanced
+                            control responsiveness without modifying any game files.<br>
+                        </p>
+                        <b>🔐 Safe & Secure</b><br>
+                        <p>FF Tools operates within Android system limits and does not interfere with game data or violate platform policies.</p>
+            </div>
+            <div class="fade" id="fadeEffect"></div>
+            <span class="read-more" onclick="toggleAbout()" id="readMore">See more</span>
+        </div>
+
+        <div class="section-title">Ratings & Reviews</div>
+        <div class="rating-section">
+            <div class="average-rating">4.5 ★</div>
+            <div class="star-display">★★★★★</div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Arman Hossain</div>
+                <div class="review-message">FF Tools ব্যবহার করার পর আমার ডিভাইস অনেক smooth লাগছে। Gaming mode টা বেশ ভালো কাজ করে। UI টাও clean ও professional।</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Ritu Akter</div>
+                <div class="review-message">Advanced Sensitivity Adjust feature টা আমার খুব পছন্দ হয়েছে। Touch response আগের থেকে অনেক stable মনে হচ্ছে।</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Mahfuz Rahman</div>
+                <div class="review-message">Auto Boosting Engine খুব ভালো। এক ট্যাপে পুরো optimization process হয়ে যায়। Simple but powerful app.</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Shila Khatun</div>
+                <div class="review-message">Lag reduction system টা helpful। Heavy game চালানোর সময় performance বেশ consistent পাচ্ছি। </div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★☆</div>
+                <div class="review-title">Sajib Hasan</div>
+                <div class="review-message">RAM optimization module টা useful। Background apps manage করে performance improve করতে সাহায্য করে।</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★☆</div>
+                <div class="review-title">Nazifa Jahan</div>
+                <div class="review-message">Advanced performance settings auto apply হওয়াটা খুব convenient। Manual কিছু করতে হয় না।</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Jannatul Nayeem</div>
+                <div class="review-message">Cleaning engine দিয়ে cache clear করলে phone একটু responsive লাগে। Overall ভালো experience।</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Farid Uddin</div>
+                <div class="review-message">FF Tools mobile gamer দের জন্য perfect utility app। Simple interface, powerful features, smooth performance.
+                </div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Tarek Aziz</div>
+                <div class="review-message">Touch sensitivity adjust feature সত্যিই next-level। Swipe আর aim movement অনেক smooth হয়ে গেছে।
+                </div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Nusrat Tamanna</div>
+                <div class="review-message">Advanced settings auto apply হওয়াটা super convenient। Device-specific tweaks খুব smartভাবে কাজ করছে।</div>
+            </div>
+
+            <div class="see-more">See all reviews</div>
+        </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div class="modal" id="modal" onclick="this.style.display='none'">
+        <img id="modalImage" src="" />
+    </div>
+
+    <script>
+        function toggleAbout() {
+            const shortText = document.getElementById("aboutShort");
+            const fullText = document.getElementById("aboutFull");
+            const readMore = document.getElementById("readMore");
+            const fade = document.getElementById("fadeEffect");
+
+            if (fullText.style.display === "none") {
+                fullText.style.display = "block";
+                shortText.style.display = "none";
+                readMore.textContent = "Show less";
+                fade.style.display = "none";
+            } else {
+                fullText.style.display = "none";
+                shortText.style.display = "block";
+                readMore.textContent = "See more";
+                fade.style.display = "block";
+            }
+        }
+
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("modal").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
